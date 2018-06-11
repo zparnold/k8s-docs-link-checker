@@ -2,18 +2,17 @@
 
 
 [[projects]]
-  name = "github.com/aws/aws-lambda-go"
+  branch = "master"
+  name = "golang.org/x/net"
   packages = [
-    "lambda",
-    "lambda/messages",
-    "lambdacontext"
+    "html",
+    "html/atom"
   ]
-  revision = "6e2e37798efbb1dfd8e9c6681702e683a6046517"
-  version = "v1.0.1"
+  revision = "db08ff08e8622530d9ed3a0e8ac279f6d4c02196"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "85fa166cc59d0fa113a1517ffbb5dee0f1fa4a6795239936afb18c64364af759"
+  inputs-digest = "fff2f8f4ad76f99affe4177ac5360a9ccee72ec30b8b16539b00a29391d53b05"
   solver-name = "gps-cdcl"
   solver-version = 1

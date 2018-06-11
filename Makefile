@@ -1,3 +1,3 @@
 build:
 	dep ensure
-	env GOOS=linux go build -ldflags="-s -w" -o bin/checker src/main.go
+	env GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o bin/checker src/main.go
