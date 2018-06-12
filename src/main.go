@@ -39,7 +39,7 @@ type NewUrl struct {
 }
 
 var skipUrls = map[string]int{
-	"https://github.com":            1,
+	"https://github.com/": 1,
 }
 
 func crawl(chWork chan NewUrl, ch chan NewUrl, chFinished chan UrlResponse) {
@@ -179,11 +179,11 @@ type FoundUrls struct {
 
 
 func Handler() (Response, error) {
-	seedUrl =  "https://kubernetes.io"
+	seedUrl =  "https://kubernetes.io/"
 
 	// Channels
-	chUrls := make(chan NewUrl, 1000)
-	chWork := make(chan NewUrl, 3000)
+	chUrls := make(chan NewUrl, 5000)
+	chWork := make(chan NewUrl, 15000)
 	chFinished := make(chan UrlResponse)
 
 	var foundUrls = make(map[string]FoundUrls)
